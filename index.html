@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather 360</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU012k-Z-1smN8ua6CDqaZ6k2nSSTEbh-5Rw&s" type="image/png">
+</head>
+<body>
+    <div id="weather-container">
+        <h2>Weather 360</h2>
+        <input type="text" id="city" placeholder="Enter the city name.......">
+        <button onclick="getWeather()">Search</button>
+
+        <div id="current-datetime"></div>
+
+        <img id="weather-icon" alt="Weather Icon">
+
+        
+        <div id="temp-div"></div>
+        <div id="weather-info"></div>
+        <div id="additional-info"></div>
+        <div id="hourly-forecast"></div>
+
+        <button id="toggle-mode" onclick="toggleMode()">Change Display Mode</button>
+    </div>
+    
+    <div id="map"></div>
+
+    <script src="./script.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbKkYLtcxaRVj1lZJ7EQF-rKMHYN6_rAA&callback=initMap">
+    </script>
+</body>
+</html>
